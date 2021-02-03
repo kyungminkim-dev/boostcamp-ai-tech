@@ -12,7 +12,7 @@
 
     * Convolition 연산의 수학적인 의미는 신호(signal)를 커널을 이용해 국소적으로 증폭 또는 감소시켜서 정보를 추출 또는 필터링하는 것이다.
 
-    * continuous : ![](http://www.sciweavers.org/upload/Tex2Img_1612311053/render.png | width=100)
+    * continuous : $[f * g](x) = \int_{R^d}{f(z)g(x+z)dx} = \int_{R^d}{f(x+z)g(z)dx} = [g*f](x)$
     * discrete : $[f * g](i) = \sum_{a\in{z^d}}{f(a)g(i+a)} = \sum_{a\in{z^d}}{f(i+a)g(a)} = [g*f](i)$
 
     * 커널은 정의역 내에서 움직여도 변하지 않고(translation invariant) 주어진 신호에 국소적(local)으로 적용.
@@ -105,7 +105,7 @@
     * Batch gradient descent
         * Update with the gradient computed from the whole data
 
-    ** Batch-size Matters **
+    **Batch-size Matters**
 
         It has been observed in practice that when using a larger batch there is a degradation in the quality of the model, as measured by its ability to generalize.
 
